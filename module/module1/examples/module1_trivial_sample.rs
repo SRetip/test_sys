@@ -8,5 +8,5 @@ use example_module::hello;
 fn main()
 {
 	let h = hello();
-	println!( "{}", h );
+	println!( "{}!", h );
 }
