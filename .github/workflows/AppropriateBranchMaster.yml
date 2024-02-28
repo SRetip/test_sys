@@ -10,7 +10,7 @@ on :
 jobs :
 
   appropriate_branch :
-    uses : Username/TestProject/.github/workflows/AppropriateBranch.yml@alpha
+    uses : SRetip/test_sys/.github/workflows/AppropriateBranch.yml@alpha
     with :
       src_branch : 'beta'
       dst_branch : '${{ github.base_ref }}'

@@ -10,7 +10,7 @@ jobs :
   # example_module
 
   test :
-    uses : Username/TestProject/.github/workflows/StandardRustPush.yml@alpha
+    uses : SRetip/test_sys/.github/workflows/StandardRustPush.yml@alpha
     with :
       manifest_path : 'module/module1/Cargo.toml'
       module_name : 'example_module'

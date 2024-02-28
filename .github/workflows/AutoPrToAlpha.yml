@@ -21,7 +21,7 @@ on :
 jobs :
 
   forward :
-    uses : Username/TestProject/.github/workflows/AutoPr.yml@alpha
+    uses : SRetip/test_sys/.github/workflows/AutoPr.yml@alpha
     with :
       src_branch : '${{ github.ref_name }}'
       dst_branch : 'alpha'

@@ -11,7 +11,7 @@ exclude = [
 [workspace.metadata]
 project_name = "test_sys"
 # url to project_repositiry
-repo_url = "https://github.com/Username/TestProject"
+repo_url = "https://github.com/SRetip/test_sys"
 # branches (includes master branch)
 branches = [ "master", "alpha" ]
 
