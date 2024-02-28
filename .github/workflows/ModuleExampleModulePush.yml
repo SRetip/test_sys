@@ -12,6 +12,6 @@ jobs :
   test :
     uses : SRetip/test_sys/.github/workflows/StandardRustPush.yml@alpha
     with :
-      manifest_path : 'module/module1/Cargo.toml'
+      manifest_path : 'module/module1/'
       module_name : 'example_module'
       commit_message : ${{ github.event.head_commit.message }}
