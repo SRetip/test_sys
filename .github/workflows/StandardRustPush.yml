@@ -87,6 +87,10 @@ jobs :
           attempt_limit : 3
           attempt_delay: 10000
       - uses : actions/checkout@v3
+      - name : Install will
+        run : cargo install --git https://github.com/Wandalen/wTools --branch alpha willbe
+      - name : Run tests with each feature
+        run : will .test ${{ inputs.manifest_path }} dry:0
       - name : Run tests in release mode
         run : cargo test --manifest-path ${{ inputs.manifest_path }} --release
       - name : Install latest nightly toolchain
@@ -98,9 +102,6 @@ jobs :
             override : true
           attempt_limit : 3
           attempt_delay: 10000
-      - name : Install will
-        run : cargo install --git https://github.com/Wandalen/wTools --branch alpha willbe
-      - name : Run tests with each feature
-        run : will .test ${{ inputs.manifest_path }} dry:0
+      
         
 
