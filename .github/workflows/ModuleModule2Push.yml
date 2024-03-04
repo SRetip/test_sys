@@ -1,4 +1,4 @@
-name : example_module
+name : module2
 
 on : push
 
@@ -7,11 +7,11 @@ env :
 
 jobs :
 
-  # example_module
+  # module2
 
   test :
     uses : SRetip/test_sys/.github/workflows/StandardRustPush.yml@alpha
     with :
-      manifest_path : 'module/module1/Cargo.toml'
-      module_name : 'example_module'
+      manifest_path : 'module/module2/Cargo.toml'
+      module_name : 'module2'
       commit_message : ${{ github.event.head_commit.message }}
